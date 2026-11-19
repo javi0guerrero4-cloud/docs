@@ -6,6 +6,16 @@
 
 # Environment variables (contains secrets)
 .env
+.env.*
+!.env.example
+
+# Private keys, wallet files, and secret directories
+*.pem
+*.key
+wallet.json
+id.json
+/secrets/
+/config/secrets/
 
 # ESLint cache for faster linting
 .eslintcache
